@@ -13,48 +13,15 @@
   }
 }
 
-@layer components {
+@layer utilities {
   .text-primary {
-    color: #16a34a !important;
+    color: #16a34a;
   }
   .bg-primary {
-    background-color: #16a34a !important;
-  }
-  .bg-primary\/10 {
-    background-color: rgba(22, 163, 74, 0.1) !important;
-  }
-  .bg-primary\/20 {
-    background-color: rgba(22, 163, 74, 0.2) !important;
-  }
-  .bg-primary\/5 {
-    background-color: rgba(22, 163, 74, 0.05) !important;
-  }
-  .hover\:bg-primary:hover {
-    background-color: #16a34a !important;
-  }
-  .hover\:text-primary:hover {
-    color: #16a34a !important;
+    background-color: #16a34a;
   }
   .border-primary {
-    border-color: #16a34a !important;
-  }
-  .ring-primary {
-    --tw-ring-color: #16a34a !important;
-  }
-  .fill-primary {
-    fill: #16a34a !important;
-  }
-  .text-secondary {
-    color: #facc15 !important;
-  }
-  .bg-secondary {
-    background-color: #facc15 !important;
-  }
-  .hover\:bg-secondary:hover {
-    background-color: #facc15 !important;
-  }
-  .hover\:bg-yellow-400:hover {
-    background-color: #facc15 !important;
+    border-color: #16a34a;
   }
 }
 
@@ -68,6 +35,8 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #ffffff;
   color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ::-webkit-scrollbar {
@@ -85,4 +54,23 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #15803d;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input, textarea, select {
+  font-family: inherit;
 }
